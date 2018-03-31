@@ -28,7 +28,10 @@
       <div>
         <h3>Create Fork</h3>
         <p><a href="#" onclick="forkRepo()">Fork Repository</a></p>
-        <div id="results"></div>
+        <div id="results">
+          <h4 id="repName"></h4>
+          <a href="#" id="link"></a><br>
+        </div>
       </div>
       <div>
         <h3>Issues</h3>
@@ -36,6 +39,7 @@
           Issue Title: <input type="text" id="title"><br>
           Issue Text: <input type="text" id="body"><br>
           <a href="#" id="search" onclick="createIssue()">Create Issue</a>
+          <a href="#" id="get" onclick="getIssues()">Get Issues</a>
         </div>
         <div id="issues"></div>
       </div>
